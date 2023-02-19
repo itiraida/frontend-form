@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+  background-color: #242933;
+  font-family: 'Poppins';
+}
+
+form {
+  padding: 1em;
+  border: 1px solid #40465E;
+  background-color: #2F3644;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  width: 32%;
+  margin: 50px auto;
+}
+
+h1 {
+  font-size: 30px;
+  color: #ADBCE3;
+  width:300px;
+  margin: 10px auto;
+}
+
+label{
+  color: #5D657E;
+  font-size: 14px;
+  display: inline-block;
+  padding:15px 0px 8px 3px;  
+  text-align: left;
+}
+
+.name-container, 
+.email-container, 
+.password-container, 
+.password2-container{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  width: 300px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 2px #202229 solid;
+  padding: 5px;
+}
+
+input:focus{
+  border-color: #000;
+}
+
+.send-button {
+  background-color: #6C63FF;
+  color: #FFFFFF;
+  border: 2px #202229 solid;
+  border-radius: 5px;
+  margin: 20px;
+
+}
+.send-button:focus {
+  border-color: #000000;
+}
+
+#name:valid,
+#email:valid,
+#password:valid, #password_confirmation:valid {
+    background: url(images/success-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: white;
+    background-origin: content-box;
+    border: 3px solid #4ECA65 ;
+}
+
+.text-name:invalid, .text-email:invalid, .text-password:invalid, .text-passwordConfirm:invalid {
+    background: url(images/error-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: white;
+    background-origin: content-box;
+    border: 3px solid #DB5A59 ;
+}
+
+span {
+
+    color: #DB5A59;
+    font-size: 12px;
+    margin: 5px 0px;
+}
